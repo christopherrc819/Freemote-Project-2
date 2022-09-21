@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+
+<head>
+  <title>Order Summary</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Order-Summary">
+  <meta name="keywords" content="">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/favicon.ico">
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Ubuntu&display=swap" rel="stylesheet">
+  <script src="src/app.js"></script>
+</head>
+
+<body>
+  <div class="cardTemplate moveRight" id="chooseDishCard">
+    <a id='closeBtn' class="closeBtn" href="#">
+      <img 
+      src="https://assets.codepen.io/6060109/food-close-x.png"
+      alt="close__button">
+    </a>
+    <img class='cardImageStyle' src="https://assets.codepen.io/6060109/delivery-man+1.png">
+    <h1>Choose a dish</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis duis posuere accumsan, in ut vel iaculis fusce posuere.</p>
+    <button data-ConfirmationBtn id="confBtn" class="inactiveBtn">Next 	&#8594</button>
+    <div class="ellipseBtns">
+      <div class="green"></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="cardTemplate" id="confirmationCard">
+    <a id='closeBtn' class="closeBtn" href="#">
+      <img 
+      src="https://assets.codepen.io/6060109/food-close-x.png"
+      alt="close__button">
+    </a>
+    <img class='cardImageStyle' src="https://assets.codepen.io/6060109/food-happy.png">
+    <h1>Confirmation</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis duis posuere accumsan, in ut vel iaculis fusce posuere.</p>
+    <div id='orderCard'>
+      <img id="product-icon"
+        src="https://assets.codepen.io/6060109/Rectangle.png"
+        alt="product-image">
+      <div class="product-details">
+        <h3>Big Mac Menu</h3>
+        <h3>$29.99</h3>
+      </div>
+      <a href="#">
+        <h3 class="change-link">Change</h3>
+      </a>
+    </div>
+    <button id="confBtn" class="activeBtn">I'm Ready to Eat!</button>
+    <div class="ellipseBtns">
+      <div></div>
+      <div class="green"></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="cardTemplate moveLeft" id="processOrderCard">
+    <a id='closeBtn' class="closeBtn" href="#">
+      <img 
+      src="https://assets.codepen.io/6060109/food-close-x.png"
+      alt="close__button">
+    </a>
+    <img class='cardImageStyle' src="https://assets.codepen.io/6060109/hamburger+1.png">
+    <h1>Your order process begins</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis duis posuere accumsan, in ut vel iaculis fusce posuere.</p>
+    <button data-ConfirmationBtn id="confBtn" class="inactiveBtn">Track on the map</button>
+    <div class="ellipseBtns">
+      <div></div>
+      <div ></div>
+      <div class="green"></div>
+    </div>
+  </div>
+</body>
+
+</html>

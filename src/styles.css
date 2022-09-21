@@ -1,0 +1,216 @@
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: Montserrat;
+}
+
+body {
+  background: url('https://assets.codepen.io/6060109/ZigZag.png') no-repeat center center;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+h1 {
+  ext-align: center;
+  }
+
+h2 {
+  font-size: 1.374rem;
+  }
+  
+p {
+  font-family: Ubuntu;
+  color: #828282;
+  font-size: 0.875rem;
+  line-height: 26px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 0.9375rem;
+  font-weight: 800;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  opacity: 1;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.5;
+  transition: 0.3s ease all;
+}
+
+
+.cardTemplate {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  min-width: 300px;
+  width: 90%;
+  max-width: 450px;
+  height: 100%;
+  max-height: 690px;
+  padding: 24px;
+  background: #FFFFFF;
+  box-shadow: 0px 40px 40px -20px #3C7B61;
+  border-radius: 5px;
+  position: relative;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.cardImageStyle {
+  width: 100%;
+  max-width: 110px;
+  margin: 18px auto;
+}
+/* Order Card */
+#orderCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F0FFF5;
+  border-radius: 5px;
+  width: 100%;
+  margin: 30px auto;
+  max-height: 66px;
+  border-radius: 5px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.product-details h3 {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.product-details h3:first-child {
+  font-weight: 800;
+  
+}
+
+.product-details h3:last-child {
+  color: #7A8F85;
+  font-weight: 500;
+}
+
+.change-link {
+  margin: 0 17px 0 0;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  color: #467A66;
+}
+
+/* Order Card End */
+
+#confBtn {
+  margin: 30px 0;
+  color: #ffffff;
+}
+
+/* Button States */
+.activeBtn {
+  background-color: #46A67E;
+}
+
+.inactiveBtn {
+  background-color: #BDBDBD;
+}
+
+/* Ellipse Design */
+
+.ellipseBtns {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  margin-top: 43px;
+}
+
+.ellipseBtns > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: grey;
+}
+
+.ellipseBtns .green {
+  background-color: #67BD99;
+}
+
+#chooseDishCard {
+  display: none;
+}
+
+#processOrderCard {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+
+  body {
+    flex-direction: row;
+    background: url('https://assets.codepen.io/6060109/ZigZag.png') center;
+    background-size: 50%;
+  }
+
+  p {
+    max-width: 354px;
+  }
+
+  #chooseDishCard, #processOrderCard {
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+  }
+
+  .moveRight {
+    transform: translateX(30%) scale(0.9);
+
+  }
+
+  .moveLeft {
+    transform: translateX(-30%) scale(0.9);
+  }
+
+  #confirmationCard {
+    z-index: 2;
+  }
+}
+
+
+@media only screen and (min-width: 1600px) {
+  .moveRight {
+    transform: translateX(60%) scale(0.9);
+
+  }
+  .moveLeft {
+    transform: translateX(-60%) scale(0.9);
+  }
+}
